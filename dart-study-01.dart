@@ -6,23 +6,29 @@ void main() {
    */
   description = 'Feijoada!';
   var name = "Willy Wonka"; //string
-  var year = 1992; //int
+  var year = 92; //int
   var pi = 3.1415; //double
+  num y = year + pi; // num -> pode misturar int e double
   var planets = ["Earth", "Mars", "Saturn"]; //list
+  
   final String nickname =
       'Bobby'; //imutavel, similar a val em kotlin. Pode usar const
+  
   var earthImg = {
     'tags': ['Earth'],
     'url': 'https://images.app.goo.gl/ew988BoheCuvjp5fA'
   };
+  
   int? number = null; //null safety
   number = 2;
+  
   Object fruit = "Apple";
   fruit = "Grappe";
 
   print(fruit);
   print(number);
   print(description);
+  print(y);
 
   /**********************************************************
    * as, is, is!\
@@ -81,4 +87,25 @@ void main() {
   // ..classes.add('important')
   // ..onClick.listen((e) => window.alert('Confirmed!'))
   // ..scrollIntoView();
+  
+  /*************************************************************
+   * Conversão de variáveis
+   */
+  
+  // String -> int
+  var one = int.parse('1');
+  assert(one == 1);
+
+  // String -> double
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);
+
+  // int -> String
+  String oneAsString = 1.toString();
+  assert(oneAsString == '1');
+
+  // double -> String
+  String piAsString = 3.14159.toStringAsFixed(2);
+  assert(piAsString == '3.14');
+
 }
