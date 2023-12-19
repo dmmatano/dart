@@ -17,7 +17,8 @@ void main() {
   var earthImg = {
     'tags': ['Earth'],
     'url': 'https://images.app.goo.gl/ew988BoheCuvjp5fA'
-  };
+  }; //map
+  
   
   int? number = null; //null safety
   number = 2;
@@ -107,5 +108,9 @@ void main() {
   // double -> String
   String piAsString = 3.14159.toStringAsFixed(2);
   assert(piAsString == '3.14');
+  
+  /**************************************************
+   * FUNCTIONS: https://dart.dev/language/functions
+   * 
 
 }
